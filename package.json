@@ -8,7 +8,10 @@
   "dependencies": {
     "@solana/web3.js": "^1.98.0",
     "@types/node": "^22.13.13",
+    "@types/prompt-sync": "^4.2.3",
     "bs58": "^6.0.0",
+    "dotenv": "^16.4.7",
+    "prompt-sync": "^4.2.0",
     "typescript": "^5.8.2"
   },
   "devDependencies": {
@@ -18,6 +21,8 @@
     "keygen": "ts-node ./keygen.ts",
     "airdrop": "ts-node ./airdrop.ts",
     "transfer": "ts-node ./transfer.ts",
-    "enroll": "ts-node ./enroll.ts"
+    "empty-wallet": "ts-node ./empty-wallet.ts",
+    "enroll": "ts-node ./enroll.ts",
+    "convert-keys": "ts-node ./convert-keys.ts"
   }
 }
