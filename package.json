@@ -1,0 +1,23 @@
+{
+  "name": "Turbin3-prereq-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mp-web3/Turbin3-prereq-1.git",
+  "author": "Mattia <mp.web3@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.98.0",
+    "@types/node": "^22.13.13",
+    "bs58": "^6.0.0",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  },
+  "scripts": {
+    "keygen": "ts-node ./keygen.ts",
+    "airdrop": "ts-node ./airdrop.ts",
+    "transfer": "ts-node ./transfer.ts",
+    "enroll": "ts-node ./enroll.ts"
+  }
+}
