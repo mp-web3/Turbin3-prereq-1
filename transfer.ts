@@ -13,7 +13,7 @@ const connection = new Connection("https://api.devnet.solana.com");
         const transaction = new Transaction().add(SystemProgram.transfer({
             fromPubkey: from.publicKey,
             toPubkey: to,
-            lamports: LAMPORTS_PER_SOL / 100,
+            lamports: LAMPORTS_PER_SOL / 10,
         }));
         transaction.recentBlockhash = (await (connection.getLatestBlockhash('confirmed'))).blockhash;
         transaction.feePayer = from.publicKey;

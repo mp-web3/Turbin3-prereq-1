@@ -1,11 +1,11 @@
-import { Transaction, SystemProgram, Connection, Keypair, LAMPORTS_PER_SOL, sendAndConfirmTransaction, PublicKey } from "@solana/web3.js";
+import { Transaction, SystemProgram, Connection, Keypair, sendAndConfirmTransaction, PublicKey } from "@solana/web3.js";
 import wallet from "./dev-wallet.json";
 import * as dotenv from 'dotenv';
 
 // Load environment variables
 dotenv.config();
 const from = Keypair.fromSecretKey(new Uint8Array(wallet));
-const to = new PublicKey(`${process.env.BOOTCAMP_TURBIN3_WALLET_ADDRESS}`);
+const to = new PublicKey(`${process.env.MY_TURBIN3_WALLET_ADDRESS}`);
 const connection = new Connection("https://api.devnet.solana.com");
 
 (async () => {
